@@ -23,7 +23,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 	// create a snapshot of the signed in user
 	const snapShot = await userRef.get();
 
-	// check if the snapshot exists in firebase database, create new user if not
+	// check if the snapshot doesn't exist in database and create new user
 	if (!snapShot.exists) {
 		const { displayName, email } = userAuth;
 		const createdAt = new Date();
