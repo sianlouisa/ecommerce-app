@@ -110,14 +110,18 @@
     align-items: center;
     justify-content: flex-end; }
     .header .options .option {
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      cursor: pointer; }
 
 .sign-in {
-  width: 30vw;
+  width: 380px;
   display: flex;
   flex-direction: column; }
   .sign-in .title {
     margin: 10px 0; }
+  .sign-in .btns {
+    display: flex;
+    justify-content: space-between; }
 
 .group {
   position: relative;
@@ -175,3 +179,9 @@
     background-color: white;
     color: black;
     border: 1px solid black; }
+  .custom-button.google-sign-in {
+    background: #4285f4;
+    color: white; }
+    .custom-button.google-sign-in:hover {
+      background: #357ae8;
+      border: none; }
