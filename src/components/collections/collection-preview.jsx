@@ -1,5 +1,5 @@
 import React from "react";
-import CollectionItem from "./CollectionItem";
+import CollectionItem from "./collection-item";
 
 const CollectionPreview = ({ title, items }) => (
 	<div className="collection-preview">
