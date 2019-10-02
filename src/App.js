@@ -9,6 +9,7 @@ import HomePage from "./pages/home-page";
 import ShopPage from "./pages/shop-page";
 import Header from "./components/header";
 import SignInPage from "./pages/sign-in-out-page";
+import CheckoutPage from "./pages/checkout-page";
 
 class App extends React.Component {
 	unsubscribeFromAuth = null;
@@ -51,6 +52,7 @@ class App extends React.Component {
 						path="/sign-in"
 						render={() => (currentUser ? <Redirect to="/" /> : <SignInPage />)}
 					/>
+					<Route exact path="/checkout" component={CheckoutPage} />
 				</Switch>
 			</div>
 		);
