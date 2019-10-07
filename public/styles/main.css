@@ -297,6 +297,14 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px; }
+  .checkout-page .test-warning {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+    color: red; }
+  .checkout-page button {
+    margin-left: auto;
+    margin-top: 50px; }
 
 .checkout-item {
   width: 100%;
